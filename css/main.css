@@ -1,0 +1,2517 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  letter-spacing: 0.125em;
+  width: 75%;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  padding: 1.25em 0;
+
+}
+
+figure {
+  margin: 0;
+  width: 10%;
+}
+
+figure img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  object-fit: cover;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-wrapper {
+  display: none;
+}
+
+.hero .content-wrapper {
+  /*--originaly content-wrapper---*/
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero p {
+  color: rgb(1, 73, 95);
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  font-size: 1.125em;
+  word-spacing: 0.063em;
+}
+
+
+.hero .text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40%;
+  top: 1em;
+  left: 1.875em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown i {
+  color: rgb(1, 108, 141);
+  font-size: 1.5em;
+}
+
+/*--- this is the font awesome icon----*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  background-color: #03455f;
+  min-width: 11em;
+  overflow: auto;
+  z-index: 1;
+  right: 0.1em;
+  /* box-shadow: #3d3d3d 13px 21px 21px; */
+}
+
+.dropdown-content a {
+  color: #01587a;
+  color: #e6f5ff;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(36, 194, 186);
+  background-color: rgb(170, 223, 255);
+}
+
+.show {
+  display: block;
+}
+
+/*--- MAIN MOBILE------------ ----*/
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.image-links {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title-wrapper {
+  text-align: center;
+  padding-top: 2.5em;
+}
+
+.title-wrapper h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.125em;
+  font-size: 2.188em;
+  color: rgb(92, 163, 207);
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.icon {
+  margin: 0;
+}
+
+.image-wrapper .text {
+  padding: 1em 0 3.5em 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  color: rgb(92, 163, 207);
+  margin: 0;
+  text-align: center;
+}
+
+.image-wrapper i {
+  font-size: 4em;
+  width: 30%;
+  color: rgb(0, 71, 68);
+  padding: 12px 10px 0 10px;
+
+}
+
+.scripture-divider {
+  border: rgb(235, 235, 235) solid 0.12em;
+  width: 80%;
+  margin-top: 150px;
+}
+
+.divider {
+  border: rgb(235, 235, 235) solid 0.12em;
+  width: 80%;
+}
+
+.scripture-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  align-items: flex-end;
+  margin: 100px 0 100px 0;
+  background-color: black;
+  padding: 20px;
+}
+
+.last-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-image p {
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 26px;
+  width: 100%;
+  text-align: right;
+  margin: 0 auto;
+}
+
+
+.scripture-wrap .john316 {
+  padding-top: 50px;
+
+}
+
+.last-image img {
+  width: 100%;
+  padding: 30px 0 150px 0;
+}
+
+
+/*---blog-------*/
+
+
+@font-face {
+  font-family: reey;
+  src: url('../fonts/reey.otf') format('opentype');
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.blog-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.blog figure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: white;
+}
+
+.imgborder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.875em 0.625em 5em 0.625em;
+}
+
+.blog h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.125em;
+  font-size: 2.188em;
+  text-transform: uppercase;
+  color: rgb(1, 90, 105);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+}
+
+.icon-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.article-text {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 71, 68);
+}
+
+.imgborder a {
+  color: rgb(253, 48, 48);
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*this made the difference for removing the stretch from safari*/
+}
+
+.article-title {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 71, 68);
+  font-size: 1.375em;
+  margin: 0;
+  padding-top: 0.938em;
+  font-weight: 400;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blogbutton {
+  background-color: transparent;
+  color: rgb(92, 163, 207);
+  border: solid rgb(92, 163, 207) 1.75px;
+  padding: 0.625em 1.875em;
+  border-radius: 0.313em;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition-duration: 250ms;
+}
+
+#blogbutton:hover {
+  background-color: rgb(0, 54, 71);
+  border: none;
+  border: solid rgb(0, 54, 71) 1.75px;
+  cursor: pointer;
+}
+
+/*-----aside-----*/
+
+.aside-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+aside p {
+  width: 70%;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: rgb(127, 190, 230);
+}
+
+.page-numbers {
+  display: flex;
+  flex-direction: row;
+}
+
+.current-page {
+  color: rgb(0, 54, 71);
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.other-posts {
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  color: rgb(127, 190, 230);
+}
+
+.other-posts a {
+  text-decoration: none;
+  color: rgb(127, 190, 230);
+
+}
+
+
+
+
+/*----FOOTER MOBILE--------------------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 54, 71);
+  width: 100%;
+  min-height: 18.75em;
+  padding-top: 20px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+footer span {
+  font-family: reey;
+  font-size: 20px;
+  color: rgb(127, 190, 230);
+}
+
+.social-med {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-icon {
+  padding: 2.5em;
+}
+
+.social-med i {
+  font-size: 1.875em;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+  ;
+}
+
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+}
+
+.copyright a:hover {
+  color: rgb(124, 255, 248);
+}
+
+/*----------------ABOUT PAGE MOBILE-----------------------*/
+
+.about-main {
+  background: url('../img/bridge2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.about-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 30px 0 50px 0;
+}
+
+.about-paragraph a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
+
+.about-paragraph a:hover {
+  color: rgb(0, 207, 180);
+}
+
+.signature {
+  padding-left: 35%;
+}
+
+
+/*----------BELIEF PAGE MOBILE---------------------*/
+
+
+.belief-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.belief-paragraph {
+  width: 75%;
+  padding: 40px 0 60px;
+}
+
+.belief-paragraph span {
+  color: rgb(36, 194, 186);
+}
+
+.belief-paragraph p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 20px;
+}
+
+
+/*-----HURTING PAGE MOBILE-----*/
+
+.hurting-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hurting-main {
+  background: url(../img/lonely9.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hurting-title {
+  width: 80%;
+  font-family: professor, sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+.hurting-text {
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.hurting-text h3 {
+  font-family: 'Cabin Sketch', cursive;
+  color: white;
+  font-size: 36px;
+}
+
+.hurting-text span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.hurting-text p {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 26px;
+}
+
+/*-------------KNOW JESUS PAGE MOBILE---------*/
+
+
+.know-divider {
+  border: lightblue solid 1px;
+  width: 80%;
+}
+
+.know-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding-top: 40px;
+  text-align: left;
+}
+
+.know-title {
+  width: 80%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: lightblue;
+  padding-top: 40px;
+  font-weight: normal;
+}
+
+.know-title span {
+  font-family: professor, sans-serif;
+  font-size: 90px;
+  color: rgb(1, 84, 99);
+  text-transform: none;
+}
+
+.know-paragraph h2 {
+  font-family: 'Cabin Sketch', cursive;
+
+  font-weight: normal;
+  font-size: 30px;
+  color: red;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.know-paragraph h3 {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: normal;
+  font-size: 35px;
+  color: red;
+  text-align: left;
+}
+
+.know-paragraph p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  color: black;
+  font-size: 24px;
+  text-align: left;
+}
+
+
+.prayer-wrap {
+  padding: 60px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.prayer-wrap span {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: normal;
+  font-size: 35px;
+  color: red;
+
+}
+
+/*----------OUR PASTOR PAGE MOBILE----------*/
+
+section {
+  width: 100%;
+}
+
+.pastor-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/bridge2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pastor-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.pastor-title h1 {
+  display: none;
+}
+
+.pastor-para {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.half-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+#title-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagewrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: gray 20px 20px 20px;
+  width: 70%;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.half-width img {
+  width: 90%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobiletitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: professor, sans-serif;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 46px;
+  color: rgb(0, 106, 124);
+}
+
+.audio-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 100px 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.audio-wrapper h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: rgb(110, 189, 216);
+  width: 80%;
+  text-align: center;
+}
+
+audio {
+  width: 90%;
+  border-radius: 30px;
+}
+
+
+/*----------GALLERY PAGE MOBILE-------*/
+
+.gallery-title h1 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(0, 106, 124);
+}
+
+.gallery-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.photo-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 30px;
+  margin: 30px 5px;
+  box-shadow: rgb(160, 160, 160) 10px 10px 20px;
+}
+
+.photo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: professor, sans-serif;
+  font-weight: normal;
+  color: rgb(73, 73, 73);
+  font-size: 30px;
+  width: 90%;
+}
+
+.description p {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo img {
+  width: 80%;
+}
+
+
+
+/*-----------MEDIA PAGE MOBILE------------*/
+
+.media-main {
+  width: 100%;
+}
+
+.media-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-title h1 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(0, 106, 124);
+}
+
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 120px;
+}
+
+.video p {
+  width: 80%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: rgb(0, 106, 124);
+  padding-top: 10px;
+}
+
+iframe {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.media-divider {
+  border: rgb(179, 225, 255) solid 1px;
+  width: 80%;
+}
+
+
+/*----------CONTACT PAGE MOBILE-------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: solid rgb(0, 159, 187) 1.75px;
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: solid rgb(0, 159, 187) 1.75px;
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+::placeholder {
+  color: rgb(140, 188, 218);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgb(140, 188, 218);
+}
+
+::-ms-input-placeholder {
+  color: rgb(140, 188, 218);
+}
+
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 150px;
+}
+
+.contact-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: transparent;
+  padding: 10px;
+  color: rgb(0, 149, 175);
+  border: solid rgb(187, 225, 248) 1.75px;
+  padding: 0.625em 1.875em;
+  border-radius: 0.313em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: rgb(0, 87, 102);
+}
+
+.contact-title h1 {
+  font-family: professor, sans-serif;
+  font-weight: 300;
+}
+
+.contact-title span {
+  font-size: 37px;
+}
+
+label {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 126, 148);
+}
+
+input {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 87, 102);
+}
+
+textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 87, 102);
+
+}
+
+
+/*----------------ARTICLES MOBILE-----------------*/
+
+
+
+.blog-article-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+
+.blog-article-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 100px;
+}
+
+.blog-article-wrap img {
+  width: 100%;
+}
+
+.blog-article-wrap h1 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(0, 106, 124);
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+
+.blog-article-wrap p {
+  font-size: 20px;
+  word-spacing: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+/*----------MORE ARTICLE PAGE MOBILE-----*/
+
+
+.more-articles-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-articles-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-articles-title h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  color: rgb(0, 106, 124);
+}
+
+.more-articles-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.more-articles-wrapper figure {
+  width: 100%;
+}
+
+
+
+
+/*--------THANKS PAGE MOBILE-----------*/
+
+.thanks-main {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.thanks-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks-title {
+  width: 80%;
+  font-size: 24px;
+  font-family: professor, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.thanks-wrapper a {
+  text-decoration: none;
+}
+
+.thanks-wrapper a:hover {
+  color: rgb(0, 255, 255);
+}
+
+.thanks-wrapper p {
+  color: rgb(0, 168, 173);
+  font-size: 18px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+
+  .dropdown-content {
+    min-width: 17em;
+  }
+
+  .dropdown-content a {
+    font-size: 1.9em;
+  }
+
+  header h2 {
+    font-size: 1.75em;
+  }
+
+  figure {
+    width: 8%;
+  }
+
+  .dropdown i {
+    font-size: 2em;
+  }
+
+  .hero .text-wrapper {
+    top: 2.7em;
+    left: 3.5em;
+  }
+
+  .hero p {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+  }
+
+  .image-wrapper {
+    flex-flow: row wrap;
+  }
+
+  .image-wrapper .text {
+    padding-bottom: 3em;
+    font-size: 1.5em;
+    width: 70%;
+  }
+
+  .image-wrapper i {
+    font-size: 4.5em;
+    width: 20%;
+    padding: 0.75em 1em 0 1em;
+  }
+
+  .icon-text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-links {
+    padding-bottom: 120px;
+  }
+
+  .last-image img {
+    padding-top: 50px;
+  }
+
+  .last-image p {
+    width: 90%;
+    font-size: 45px;
+    margin: 0 auto;
+  }
+
+  .scripture-wrap {
+    width: 80%;
+    align-items: flex-end;
+    padding-right: 30px;
+
+  }
+
+  .scripture-divider {
+    margin: 0;
+  }
+
+  /*----- tablet blog area--------*/
+
+  .blog {
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .blog-title-wrapper {
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+  }
+
+  .blog-wrapper {
+    padding-top: 50px;
+  }
+
+  .blog h2 {
+    color: rgb(92, 163, 207);
+    padding-top: 80px;
+  }
+
+  .inner-container {
+    width: 70%;
+    position: relative;
+  }
+
+  #blogbutton {
+    margin-top: 100px;
+    padding: 1.5em 2.75em;
+    font-size: 1.2em;
+  }
+
+  .article-title {
+    font-size: 28px;
+  }
+
+  .article-text {
+    font-size: 22px;
+  }
+
+
+  aside p {
+    font-family: reey;
+    font-size: 30px;
+  }
+
+
+  /*----- FOOTER TABLET ------*/
+
+  footer {
+    padding-top: 100px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  footer span {
+    font-size: 26px;
+    color: rgb(144, 212, 255);
+  }
+
+  .soc-icon {
+    font-size: 1.5em;
+  }
+
+  /*---------------BELIEF PAGE TABLET------------*/
+
+
+
+  .belief-paragraph p {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 20px;
+  }
+
+
+
+
+  /*---------HURTING PAGE TABLET------*/
+
+  .hurting-main {
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .hurting-text p {
+    font-size: 30px;
+  }
+
+  .hurting-title {
+    font-size: 50px;
+  }
+
+
+  /*----------OUR PASTOR PAGE TABLET-----*/
+
+  .pastor-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pastor-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .pastor-title h1 {
+    font-family: reey;
+    font-family: professor, sans-serif;
+  }
+
+  .pastor-para {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 27px;
+    width: 90%;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .half-width img {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+
+  .audio-wrapper h2 {
+    font-size: 30px;
+  }
+
+  audio {
+    width: 60%;
+
+  }
+
+
+  /*---------------PHOTO GALLERY TABLET------------*/
+  .gallery-main {
+    padding-bottom: 300px;
+  }
+
+  .gallery-title h1 {
+    padding-top: 50px;
+    font-size: 60px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(0, 106, 124);
+    word-spacing: 6px;
+  }
+
+  .photo-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .photo {
+    width: 40%;
+    margin-bottom: 170px;
+  }
+
+  .description p {
+    font-size: 40px;
+  }
+
+
+  /*-------------MEDIA PAGE TABLET-------------*/
+
+
+  .video {
+    width: 75%;
+
+  }
+
+  .media-title h1 {
+    font-size: 60px;
+  }
+
+  .video p {
+    font-size: 22px;
+    color: black;
+  }
+
+
+  .media-divider {
+    border: rgb(179, 225, 255) solid 1px;
+    width: 80%;
+  }
+
+
+  /*----------CONTACT PAGE TABLET---------*/
+
+
+  .contact-form {
+    width: 90%;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input[type=email] {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input[type=subject] {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input {
+    font-size: 22px;
+  }
+
+  textarea {
+    padding: 20px 0 80px 20px;
+    font-size: 22px;
+  }
+
+  .contact-title h1 {
+    font-size: 50px;
+  }
+
+  .contact-title span {
+    font-size: 50px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  .contact-form button {
+    font-size: 24px;
+  }
+
+  /*-----------ARTICLE PAGE TABLET----------*/
+
+
+
+  .blog-article-wrap h1 {
+    font-size: 60px;
+  }
+
+  .blog-article-wrap p {
+    font-size: 32px;
+  }
+
+
+
+  /*--------MORE ARTICLES PAGE TABLET-------*/
+
+
+
+  .more-articles-title h2 {
+    font-size: 40px;
+  }
+
+
+
+
+  /*----------THANKS PAGE TABLET----------*/
+
+
+
+  .thanks-title {
+    font-size: 30px;
+    margin: 70px 0;
+  }
+
+  .thanks-wrapper p {
+    color: rgb(0, 168, 173);
+    font-size: 22px;
+  }
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for viewports that meet the condition */
+
+  /*----desktop nav----*/
+
+.desktop-nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.desktop-nav nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.desktop-nav .menu{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.desktop-nav .menu li{
+  list-style:none;
+  padding: 1em 0.5em 0 1.4em;
+  color: rgb(1, 73, 95);
+  letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.desktop-nav .menu li a{
+  text-decoration: none;
+}
+.desktop-nav .menu li a:visited {
+  color: rgb(1, 73, 95);
+}
+
+.dropdown {
+  display:none;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+
+
+  /* .dropdown-content {
+    background-color: white;
+  } */
+/* 
+  .dropdown-content a {
+    background-color: white;
+    color: rgb(1, 73, 95);
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+  } */
+
+  /* .dropdown-content a:hover {
+    background-color: white;
+    color: rgb(36, 194, 186);
+  } */
+
+  .show {
+    display: block;
+  }
+
+  #pastorlink {
+    display: none;
+  }
+
+  /* .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  } */
+
+  /* .dropdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+
+  /* .dropdown-content a {
+    padding: 1em 0.5em 0 1.4em;
+    font-size: 19px;
+    font-weight: normal;
+  } */
+
+  .dropdown i {
+    display: none;
+  }
+
+
+
+  /*------------ desktop nav end----*/
+
+  figure {
+    width: 6%;
+  }
+
+  header h2 {
+    font-size: 24px;
+    padding-left: 30px;
+  }
+
+  .hero p {
+    font-size: 2.5em;
+    line-height: 70px;
+  }
+
+  .hero .text-wrapper {
+    top: 8em;
+    left: 6em;
+    width: 35%;
+  }
+
+  .image-wrapper .text {
+    font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .image-wrapper i {
+    margin: 0.75em 1.8em 0.2em 1.8em;
+    font-size: 6em;
+    transition-duration: 250ms;
+    padding: 0px;
+  }
+
+  .image-wrapper i:hover {
+    color: rgb(1, 105, 109);
+  }
+
+
+
+  .icon-text-wrap {
+    padding-bottom: 30px;
+  }
+
+  .slideshow-wrap {
+    padding-top: 50px;
+  }
+
+  .last-image p {
+    width: 90%;
+    font-size: 60px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1px;
+    text-align: right;
+
+  }
+
+  .scripture-wrap {
+    background-color: black;
+    width: 60%;
+    padding: 40px 0;
+    margin-bottom: 100px;
+  }
+
+  /*-----desktop blog section -----------*/
+
+  .blog {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .blog .scripture {
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    color: white;
+    font-style: normal;
+    text-align: right;
+
+    font-size: 36px;
+    width: 50%;
+  }
+
+  .blog .scripture2 {
+    font-size: 36px;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    width: 50%;
+    font-style: normal;
+    text-align: right;
+  }
+
+
+  .blog-title-wrapper {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+
+  .blog-wrapper {
+    padding-top: 60px;
+  }
+
+  #blogbutton {
+    transition-duration: 250ms;
+  }
+
+
+
+  .divider {
+    border: solid rgb(92, 163, 207) 1px;
+  }
+
+  .article-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(0, 71, 68);
+  }
+
+  .article-text {
+    font-size: 20px;
+  }
+
+  .blog h2 {
+    font-size: 45px;
+
+  }
+
+  .imgborder {
+    width: 25%;
+    justify-content: flex-start;
+    padding: 2em 4em 5em 4em;
+  }
+
+  .inner-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .blog .articleimg {
+    box-shadow: gray 10px 10px 20px;
+  }
+
+  .social-med i {
+    transition-duration: 250ms;
+  }
+
+  .social-med i:hover {
+    color: rgb(36, 194, 186);
+  }
+
+  /*---------------ABOUT PAGE DESKTOP------------*/
+
+
+
+  .desktop-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .desktop-nav nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .desktop-nav .menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .desktop-nav .menu li{
+    list-style:none;
+    padding: 1em 0.5em 0 1.4em;
+    color: rgb(1, 73, 95);
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+
+  .desktop-nav .menu li a{
+    text-decoration: none;
+    transition-duration: 250ms;
+  }
+ 
+  .desktop-nav .menu li a:hover {
+    color:rgb(6, 172, 155);
+  }
+ 
+
+  .desktop-nav .menu li a {
+    color: rgb(1, 73, 95);
+  }
+  
+  .dropdown {
+    display:none;
+  }
+  
+  .dropdown-content {
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  /* #about-nav-wrapper {
+    width: 100%;
+  } */
+
+  .divider {
+    border: rgb(235, 235, 235) solid 0.12em;
+    width: 80%;
+  }
+
+  .about-paragraph {
+    width: 60%;
+  }
+
+  .about-paragraph p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .signature {
+    padding-left: 70%;
+  }
+
+
+
+  /*--------------BELIEF PAGE DESKTOP----------*/
+
+  .belief-paragraph {
+    width: 60%;
+  }
+
+  .belief-paragraph p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+
+  /*--------------HURTING PAGE DESKTOP----------*/
+
+
+  .hurting-main {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .hurting-text {
+    width: 60%;
+  }
+
+  .hurting-text h3 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 30px;
+  }
+
+  .hurting-title {
+    font-size: 60px;
+    padding-bottom: 50px;
+  }
+
+  .hurting-text p {
+    font-size: 20px;
+  }
+
+  /*-------------KNOW JESUS DESKTOP-------------*/
+
+  .know-paragraph {
+    width: 60%;
+  }
+
+
+
+  /*----------OUR PASTOR DESKTOP---------------*/
+
+
+  .pastor-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #mobiletitle {
+    display: none;
+  }
+
+  .pastor-title h1 {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    display: flex;
+    font-size: 60px;
+    color: rgb(0, 105, 105);
+    margin: 0 auto;
+  }
+
+  .pastor-para {
+    padding-top: 0;
+    font-size: 24px;
+  }
+
+  #imagewrap {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  #title-para {
+    width: 50%;
+    padding-top: 80px;
+  }
+
+
+  .audio-wrapper h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 105, 105);
+  }
+
+
+
+
+  /*---------PHOTO GALLERY DESKTOP-----*/
+
+  #gallery-nav-wrapper {
+    width: 90%;
+  }
+
+  .gallery-title h1 {
+    font-size: 50px;
+  }
+
+  .photo {
+    width: 25%;
+  }
+
+
+
+  /*-----------MEDIA PAGE DESKTOP --------*/
+
+  .video-wrapper {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 150px 0 150px 0;
+  }
+
+  .media-title {
+    padding: 50px 0 40px 0;
+  }
+
+  .video {
+    width: 30%;
+  }
+
+  .video p {
+    font-size: 20px;
+  }
+
+  .media-divider {
+    border: rgb(179, 225, 255) solid 1px;
+    width: 80%;
+  }
+
+
+
+
+  /*----------CONTACT PAGE DESKTOP---------*/
+  #contact-nav-wrapper {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-title h1 {
+    font-size: 50px;
+  }
+
+  .contact-title span {
+    font-size: 50px;
+  }
+
+  .contact-form button {
+    font-size: 20px;
+    transition-duration: 250ms;
+  }
+
+  .contact-form button:hover {
+    background-color: rgb(0, 54, 71);
+    border: none;
+    border: solid rgb(0, 54, 71) 1.75px;
+    cursor: pointer;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+
+  /*-----------ARTICLE PAGE DESKTOP----------*/
+
+  .blog-article-wrap {
+    width: 60%;
+  }
+
+  .blog-article-wrap img {
+    width: 100%;
+  }
+
+  .blog-article-wrap p {
+    font-size: 22px;
+  }
+
+
+
+  /*---------MORE ARTICLES---------------*/
+
+
+  .more-articles-wrapper {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+
+
+  /*-----------THANKS PAGE DESKTOP---------*/
+
+
+  .thanks-title {
+    font-size: 30px;
+    margin: 70px 0 80PX 0;
+  }
+
+  .thanks-wrapper p {
+    color: rgb(0, 168, 173);
+    font-size: 22px;
+  }
+
+  .thanks-wrapper a :hover {
+    color: rgb(0, 214, 221);
+  }
+
+
+  .desktop-nav .menu li:hover {
+    color:turquoise;
+  }
+
+
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
