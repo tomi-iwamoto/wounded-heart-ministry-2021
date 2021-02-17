@@ -201,7 +201,6 @@ figure img {
 }
 
 .hero .content-wrapper {
-  /*--originaly content-wrapper---*/
   width: 100%;
   position: relative;
 }
@@ -250,7 +249,6 @@ figure img {
   overflow: auto;
   z-index: 1;
   right: 0.1em;
-  /* box-shadow: #3d3d3d 13px 21px 21px; */
 }
 
 .dropdown-content a {
@@ -389,7 +387,6 @@ main .content-wrapper {
   text-align: right;
   margin: 0 auto;
 }
-
 
 .scripture-wrap .john316 {
   padding-top: 50px;
@@ -572,10 +569,7 @@ aside p {
 .other-posts a {
   text-decoration: none;
   color: rgb(127, 190, 230);
-
 }
-
-
 
 
 /*----FOOTER MOBILE--------------------*/

@@ -1,23 +1,5 @@
 
-/*---For dropdown menu----*/
-
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-// window.onclick = function(event){
-//  if (!event.target.matches("#dropbutton")){
-//      let dropdowns = document.getElementsByClassName("dropdown-content");
-//      let i;
-//      for (i=0; i<dropdowns.length; i++){
-//          let openDropdown= dropdowns[i];
-//          if (openDropdown.classList.contains("show")){
-//              openDropdown.classList.remove("show");
-//          }
-//      }
-//  }
-
-// }
+/*---jQuery dropdown menu----*/
 
 
 $(document).ready(()=>{
@@ -34,7 +16,7 @@ $(document).ready(()=>{
 
 
 
-/*------for slide show on homepage-----*/
+/*------For slide show on homepage-----*/
 
 let slideIndex=0;
 showSlides();
@@ -54,8 +36,4 @@ function showSlides(){
     slides[slideIndex-1].style.display="block";
     setTimeout(showSlides, 5000); 
 }
-
-
-
-/*------------------photo gallery zoom----------*/
 
